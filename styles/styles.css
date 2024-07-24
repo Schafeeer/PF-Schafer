@@ -436,7 +436,7 @@ main#store-items {
 
 @media screen and (max-width: 350px) {
     body {
-        background-image: url('/img/Query-Mobile.png');
+        background-image: url('../img/Query-Mobile.png');
     }
 
     h1 {
@@ -530,7 +530,7 @@ main#store-items {
 
 @media screen and (min-width: 350px) and (max-width: 385px) {
     body {
-        background-image: url('/img/Query-Mobile.png');
+        background-image: url('../img/Query-Mobile.png');
     }
 
     h1 {
@@ -621,7 +621,7 @@ main#store-items {
 
     @media screen and (min-width: 386px) and (max-width: 436px) {
         body {
-            background-image: url('/img/Query-Computer.jpg');
+            background-image: url('../img/Query-Computer.jpg');
         }
     
         h1 {
@@ -707,7 +707,7 @@ main#store-items {
 
 @media (min-width: 436px) and (max-width: 770px) {
         body {
-            background-image: url('/img/Query-Computer.jpg');
+            background-image: url('../img/Query-Computer.jpg');
         }
     
         h1 {
@@ -792,7 +792,7 @@ main#store-items {
 
     @media (max-width: 1024px) {
         body {
-            background-image: url('/img/Query-Computer.jpg');
+            background-image: url('../img/Query-Computer.jpg');
         }
     
         h1 {
