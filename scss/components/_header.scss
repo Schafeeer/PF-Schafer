@@ -1,11 +1,18 @@
-/* Navbar */
+/* Navbar 
 .custom-navbar {
     background-color: $main-color !important;
     color: black;
 
+    .navbar-toggler {
+        display: none; 
+        background-color: transparent;
+        border: none;
+        color: white;
+
     .navbar-collapse {
         display: flex;
         justify-content: center;
+        flex-direction: row;
     }
 
     .navbar-nav {
@@ -34,8 +41,40 @@
         }
 
         .dropdown-item {
-            color: white;
+            color: black;
             background-color: #337DFF;
         }
     }
+    .btn-nav {
+        color: black !important;
+        &:hover {
+            color: white !important;
+        }
+    }
 }
+} */
+
+.custom-navbar {
+    background-color: steelblue !important;
+    color: black; }
+    .custom-navbar .navbar-collapse {
+      display: flex;
+      justify-content: center; }
+    .custom-navbar .navbar-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .custom-navbar .navbar-nav .nav-item {
+        margin: 0 10px; }
+        .custom-navbar .navbar-nav .nav-item .nav-link {
+          color: white;
+          font-size: 20px; }
+          .custom-navbar .navbar-nav .nav-item .nav-link:hover {
+            background-color: #74b9ff;
+            border-radius: 25px; }
+          .custom-navbar .navbar-nav .nav-item .nav-link, .custom-navbar .navbar-nav .nav-item .nav-link:visited {
+            color: white; }
+      .custom-navbar .navbar-nav .dropdown-item {
+        color: white;
+        background-color: #337DFF; }
