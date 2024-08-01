@@ -440,7 +440,7 @@ main#store-items {
     }
 
     h1 {
-        font: 20px;
+        font-size: 20px;
     }
 
     h2 {
@@ -458,7 +458,7 @@ main#store-items {
     .grid-container-3 {
         grid-gap: 15px;
         padding: 3px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr !important;
         background: none;
         padding: 5px;
     }
@@ -469,7 +469,6 @@ main#store-items {
         border-radius: 4px;
         width: 95%;
         margin: auto;
-        padding: 8px;
     }
 
     .grid-item img {

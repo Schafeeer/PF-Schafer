@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* INDEX HTML */
+.content-section {
+  position: relative;
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-section img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.image-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.image-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.image-link .hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  transition: background-color 0.3s ease-in-out;
+}
+.image-link .hover-text:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.heading-bg {
+  background-color: black;
+}
+
+/* BACKGROUND & BODY */
+body {
+  background-image: url("../img/Query-Computer.jpg");
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+body h2,
+body h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+.background-section {
+  background-image: url("../img/Query-Computer.jpg");
+  background-size: cover;
+  padding: 20px;
+}
+
+.trade-winds-regular {
+  font-family: "Trade Winds", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+}
+a:hover {
+  color: rgb(0, 0, 0);
+}
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* HELP PAGE FAQ */
+.FAQ details {
+  margin: 20px auto;
+  max-width: 600px;
+}
+.FAQ details[open] {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: black;
+}
+.FAQ details:not([open]) {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.FAQ details summary {
+  background-color: #ffffff;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* CONTACT FORM */
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.contact-form-container .contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: lightblue;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form-container .contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contact-form-container .contact-form input,
+.contact-form-container .contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form-container .contact-form button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form-container .contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* MAP */
+.map-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+.map-container iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}/*# sourceMappingURL=generals.css.map */
