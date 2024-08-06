@@ -8,60 +8,63 @@
     box-sizing: border-box;
 }
 
+@mixin flex ($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 /* INDEX HTML */
 .content-section {
+    @include flex (flex, center, center);
     position: relative;
     height: 215px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
 
     img {
         max-width: 100%;
         max-height: 100%;
         object-fit: cover;
     }
-}
 
-.image-link {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-
-    img {
+    .image-link {
+        position: relative;
         display: block;
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .hover-text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        color: rgb(255, 255, 255);
-        background-color: transparent;
-        padding: 10px;
-        border-radius: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 35px;
-        transition: background-color 0.3s ease-in-out;
-
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.7);
+    
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    
+        .hover-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+            padding: 10px;
+            border-radius: 50px;
+            @include flex(flex, center, center);
+            font-size: 35px;
+            transition: background-color 0.3s ease-in-out;
+    
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
         }
     }
-}
 
 .heading-bg {
     background-color: black;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* BACKGROUND & BODY */
@@ -144,10 +147,9 @@ a {
 /* CONTACT FORM */
 
 .contact-form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, center, center);
     margin-top: 30px;
+}
 
     .contact-form {
         display: flex;
@@ -188,7 +190,6 @@ a {
             }
         }
     }
-}
 
 /* MAP */
 
@@ -204,6 +205,6 @@ a {
     }
 }
 
-//! VARIABLES
+//! VARIABLE
 
-$main-color: steelblue;
+$nav-color: steelblue;

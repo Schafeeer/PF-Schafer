@@ -1,24 +1,19 @@
 /* FOOTER */
 .foot {
-    background-color: $main-color;
+    @include flex (flex, center, center);
+    background-color: steelblue;
     color: white;
     padding: 5px;
     margin-top: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100px;
 
     .middle {
-        display: flex;
-        justify-content: center;
+        @include flex (flex, center, center);
         gap: 10px;
         text-align: center;
 
         .social {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex (flex, center, center);
             width: 30px;
             height: 30px;
             margin: 20px;

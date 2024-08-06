@@ -1,70 +1,13 @@
-/* Navbar 
 .custom-navbar {
-    background-color: $main-color !important;
-    color: black;
-
-    .navbar-toggler {
-        display: none; 
-        background-color: transparent;
-        border: none;
-        color: white;
-
-    .navbar-collapse {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .navbar-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-        .nav-item {
-            margin: 0 10px;
-
-            .nav-link {
-                color: white;
-                font-size: 20px;
-
-                &:hover {
-                    background-color: #74b9ff;
-                    border-radius: 25px;
-                }
-
-                &,
-                &:visited {
-                    color: white;
-                }
-            }
-        }
-
-        .dropdown-item {
-            color: black;
-            background-color: #337DFF;
-        }
-    }
-    .btn-nav {
-        color: black !important;
-        &:hover {
-            color: white !important;
-        }
-    }
-}
-} */
-
-.custom-navbar {
-    background-color: steelblue !important;
+    background-color: $nav-color !important;
     color: black; }
     .custom-navbar .navbar-collapse {
       display: flex;
       justify-content: center; }
-    .custom-navbar .navbar-nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%; }
+      .custom-navbar .navbar-nav {
+        @include flex (flex, center, center);
+        width: 100%;
+    }
       .custom-navbar .navbar-nav .nav-item {
         margin: 0 10px; }
         .custom-navbar .navbar-nav .nav-item .nav-link {

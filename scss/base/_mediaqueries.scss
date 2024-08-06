@@ -42,6 +42,19 @@
         border-radius: 2px;
     }
 
+    img {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(28, 104, 247, 0.418);
+        transition: border-radius 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+    
+        &:hover {
+            border-radius: 100%; 
+            box-shadow: 0 0 35px rgba(22, 73, 124, 0.5);
+        }
+    }
+
     .btn-shop {
         width: 20px;
         text-decoration: none;
@@ -55,40 +68,40 @@
     }
 
     .custom-navbar {
-        font-size: 14px; // Ensures font-size for navbar items on small screens
+        font-size: 14px; 
 
         .navbar-toggler {
-            display: block; // Show the toggler on mobile
+            display: block; 
             background-color: transparent;
             border: none;
             color: white;
         }
 
         .navbar-collapse {
-            display: none; // Hide collapse items initially
+            display: none; 
         }
 
         .navbar-nav {
             display: block;
             text-align: center;
-            width: 100%; // Full width for mobile
+            width: 100%; 
         }
 
         .nav-item {
-            margin: 10px 0; // Stacked items with vertical margin
+            margin: 10px 0; 
         }
 
         .nav-link {
-            font-size: 14px; // Adjusted font size for small screens
+            font-size: 14px; 
         }
     }
 
     .custom-navbar h1 {
-        font-size: 14px; // Ensures consistent heading size in navbar
+        font-size: 14px; 
     }
 
     .social i {
-        font-size: 30px; // Ensures icon size for small screens
+        font-size: 30px; 
     }
 }
 
@@ -157,6 +170,18 @@
         width: 60px;
         height: 60px;
         border-radius: 2px;
+    }
+
+    img {
+        width: 120px; 
+        height: 120px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(28, 104, 247, 0.5);
+
+        &:hover {
+            border-radius: 50%;
+            box-shadow: 0 0 25px rgba(22, 73, 124, 0.7);
+        }
     }
 
     .btn-shop {
@@ -277,6 +302,18 @@
         border-radius: 2px;
     }
 
+    img {
+        width: 130px;
+        height: 130px; 
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(28, 104, 247, 0.5);
+
+        &:hover {
+            border-radius: 60%;
+            box-shadow: 0 0 30px rgba(22, 73, 124, 0.6);
+        }
+    }
+
     .btn-shop {
         width: 25px;
         text-decoration: none;
@@ -395,6 +432,19 @@
         border-radius: 2px;
     }
 
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(28, 104, 247, 0.418);
+        transition: border-radius 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+    
+        &:hover {
+            border-radius: 100%; 
+            box-shadow: 0 0 35px rgba(22, 73, 124, 0.5);
+        }
+    }
+
     .btn-shop {
         width: 20px;
         text-decoration: none;
@@ -511,6 +561,19 @@
         width: 60px;
         height: 60px;
         border-radius: 2px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(28, 104, 247, 0.418);
+        transition: border-radius 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+    
+        &:hover {
+            border-radius: 100%; 
+            box-shadow: 0 0 35px rgba(22, 73, 124, 0.5);
+        }
     }
 
     .btn-shop {
