@@ -140,7 +140,15 @@ a {
             border: none;
             cursor: pointer;
             text-align: center;
+
+            &:hover {
+                background-color: #f0f0f0;
+            }
         }
+    }
+
+    p {
+        font-size: 20px;
     }
 }
 

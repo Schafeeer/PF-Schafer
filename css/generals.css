@@ -126,6 +126,12 @@ a:visited {
   cursor: pointer;
   text-align: center;
 }
+.FAQ details summary:hover {
+  background-color: #f0f0f0;
+}
+.FAQ p {
+  font-size: 20px;
+}
 
 /* CONTACT FORM */
 .contact-form-container {
