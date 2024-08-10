@@ -68,10 +68,8 @@ body {
   body h3 {
     font-family: 'Oswald', sans-serif; }
 
-.background-section {
-  background-image: url("../img/Query-Computer.jpg");
-  background-size: cover;
-  padding: 20px; }
+.sale-bg {
+  background-size: cover; }
 
 .trade-winds-regular {
   font-weight: 300;
