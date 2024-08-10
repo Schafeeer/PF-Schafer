@@ -14,6 +14,12 @@
     align-items: $align;
 }
 
+//! EXTEND
+
+%font {
+    font-family: "Trade Winds", system-ui;
+}
+
 /* INDEX HTML */
 .content-section {
     @include flex (flex, center, center);
@@ -90,9 +96,9 @@ body {
 }
 
 .trade-winds-regular {
-    font-family: "Trade Winds", system-ui;
     font-weight: 300;
     font-style: normal;
+    @extend %font;
 }
 
 /* LINKS */
@@ -112,45 +118,46 @@ a {
 
 /* HELP PAGE FAQ */
 
-.FAQ {
-    details {
-        margin: 20px auto;
-        max-width: 600px;
+    .FAQ {
+        padding: 50px;
+        details {
+            margin: 20px auto;
+            max-width: 600px;
 
-        &[open] {
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #ffffff;
-            color: black;
-        }
+            &[open] {
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #ffffff;
+                color: black;
+            }
 
-        &:not([open]) {
-            background-color: #ffffff;
-            padding: 10px;
-            border-radius: 5px;
-        }
+            &:not([open]) {
+                background-color: #ffffff;
+                padding: 10px;
+                border-radius: 5px;
+            }
 
-        summary {
-            background-color: #ffffff;
-            color: black;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-            outline: none;
-            border: none;
-            cursor: pointer;
-            text-align: center;
+            summary {
+                background-color: #ffffff;
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                text-align: center;
 
-            &:hover {
-                background-color: #f0f0f0;
+                &:hover {
+                    background-color: #f0f0f0;
+                }
             }
         }
-    }
 
-    p {
-        font-size: 20px;
+        p {
+            font-size: 20px;
+        }
     }
-}
 
 /* CONTACT FORM */
 
